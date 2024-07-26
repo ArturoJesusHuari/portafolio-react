@@ -25,9 +25,9 @@ function HeaderComponent() {
             <ContentComponent text="Semanas"  to='/portafolio-react/weeks'/>
             <ContentComponent text="Sobre Mi"  to='/portafolio-react/about-me'/>
             <ContentComponent text="Laboratorios"  to='/portafolio-react/labs'/>
-            <ContentComponent text="Conclusión"  to='/portafolio-react/'/>
-            <ContentComponent text="Reflexión"  to='/portafolio-react/'/>
-            <ContentComponent text="Bibliografía"  to='/portafolio-react/'/>
+            <ContentComponent text="Conclusión"  to='/portafolio-react/conclusion'/>
+            <ContentComponent text="Reflexión"  to='/portafolio-react/reflection'/>
+            <ContentComponent text="Bibliografía"  to='/portafolio-react/bibliography'/>
           </ul>
         </nav>
       </div>
