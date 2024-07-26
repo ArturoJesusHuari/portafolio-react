@@ -1,33 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
+import HeaderComponent from './components/Header/HeaderComponent'
+import IntroductionComponent from './components/Intro/IntroductionComponent'
+import WeeksComponents from './components/Weeks/WeeksComponent'
+import AboutMeComponent from './components/AboutMe/AboutMeComponent'
+import LabsComponents from './components/Labs/LabsComponents'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <Router>
+        <HeaderComponent />
+          <main className="pt-24 lg:w-1/2 lg:py-8">
+          <Routes>
+            <Route path='/portafolio-react/' element={ <IntroductionComponent/> }/> 
+            <Route path='/portafolio-react/intro' element={ <IntroductionComponent/> }/> 
+            <Route path='/portafolio-react/weeks' element={ <WeeksComponents/> }/> 
+            <Route path='/portafolio-react/about-me' element={ <AboutMeComponent/> }/> 
+            <Route path='/portafolio-react/labs' element={ <LabsComponents/> }/> 
+          </Routes>
+          </main>
+        </Router>
     </>
   )
 }
