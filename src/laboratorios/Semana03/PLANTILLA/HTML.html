@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML</title>
+  <script src="https://kit.fontawesome.com/64f1b365fc.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+
+    header .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    @media (min-width: 768px) {
+      header .container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    header .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      header .contact-info {
+        flex-direction: row;
+      }
+    }
+
+    header .contact-info div {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+    }
+
+    @media (min-width: 768px) {
+      header .contact-info div {
+        margin-right: 20px;
+        margin: 0 20px;
+      }
+    }
+
+    header .contact-info img {
+      margin-right: 5px;
+    }
+
+    nav {
+      background-color: #555;
+      color: white;
+      padding: 10px 0;
+    }
+
+    nav .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    @media (min-width: 768px) {
+      nav .container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      nav ul {
+        flex-direction: row;
+      }
+    }
+
+    nav ul li {
+      margin: 5px 0;
+    }
+
+    @media (min-width: 768px) {
+      nav ul li {
+        margin-right: 20px;
+      }
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+      .carousel {
+        height: 500px;
+      }
+    }
+
+    .carousel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel .caption {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: white;
+    }
+
+    .carousel .caption h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    @media (min-width: 768px) {
+      .carousel .caption h1 {
+        font-size: 36px;
+      }
+    }
+
+    .carousel .caption a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      color: white;
+      background-color: #007bff;
+      text-decoration: none;
+    }
+
+    .carousel .caption a.secondary {
+      background-color: #6c757d;
+    }
+
+    .services, .about, .footer {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .services .card, .about .card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    @media (min-width: 768px) {
+      .services .card, .about .card {
+        margin: 20px;
+      }
+    }
+
+    .services .card img, .about .card img {
+      margin-bottom: 20px;
+    }
+
+    .services .card h5, .about .card h5 {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .about h2, .footer h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .about .tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .about .tabs button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+
+    .about .tabs button.active {
+      background-color: #0056b3;
+    }
+
+    .about .tab-content {
+      margin-top: 20px;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+    }
+
+    .footer .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    .footer .container div {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .footer .container div {
+        width: 30%;
+        margin-bottom: 0;
+      }
+    }
+
+    .footer .social-icons {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer .social-icons {
+        justify-content: flex-start;
+      }
+    }
+
+    .footer .social-icons a {
+      margin-right: 10px;
+    }
+
+    .footer .social-icons img {
+      height: 24px;
+    }
+    .homeButton{
+      border-radius: 5px;
+    }
+    #servicesContainer {
+      display: flex;
+      width: 100%;
+    }
+    @media (max-width: 800px) {
+    #servicesContainer {
+      display: block;
+    }
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html">
+        <img src="images/logo-inverse-158x37.png" alt="Logo" style="height: 40px;">
+      </a>
+      <div class="contact-info">
+        <div>
+          <img src="images/icon-clock-32x32.png" alt="Clock Icon" style="height: 32px;">
+          <span>Mon - Sat: 9:00-18:00</span>
+        </div>
+        <div>
+          <img src="images/icon-map-marker-25x33.png" alt="Location Icon" style="height: 32px;">
+          <span>267 Park Avenue, New York, NY 90210</span>
+        </div>
+        <div>
+          <img src="images/icon-phone-28x29.png" alt="Phone Icon" style="height: 32px;">
+          <span>1-800-1234-5671</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="pages.html">Pages</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="carousel">
+    <img src="images/home-slide-1.jpg" alt="Slide 1">
+    <div class="caption">
+      <h1 style="color:#333">Solutions that never miss the aim</h1>
+      <a class="homeButton" href="#">Learn More</a>
+      <a class="homeButton" style="background-color: transparent; color: #333;" href="#" class="secondary">Our Services</a>
+    </div>
+  </div>
+  <section class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="row" id="servicesContainer">
+        <div class="col">
+          <div class="card">
+            <img src="images/icon-chart-41x36.png" alt="">
+            <h5>Financial Planning</h5>
+            <p>We'll help you make sensible decisions about money that can help you achieve your goals in life.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/icon-chart-41x36.png" alt="">
+            <h5>Retirement Planning</h5>
+            <p>Use our strategies and retirement advice, including retirement calculators to help you retire faster.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/icon-chart-41x36.png" alt="">
+            <h5>Risk Management</h5>
+            <p>Risk management is intended to manage financial and other losses associated with risks to your assets or business.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/icon-chart-41x36.png" alt="">
+            <h5>Taxation</h5>
+            <p>Tax planning considers the tax implications of business decisions, usually with the goal of minimizing tax liability.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <h4>Doing the right thing, at the right time.</h4>
+          <p style="text-align: justify;">Welcome to the leading company on the market! Our success is driven by the highest quality customer service. We can meet the requirements even of the whimsical clients; there are no complex tasks for us! Thanks for your choice! Our company can boast the reputation of the trusted partner known worldwide. We are proud of the uncompromising quality of services.</p>
+        </div>
+        <div class="col">
+          <div class="tabs">
+            <button class="active homeButton" onclick="showTab('press')">Press</button>
+            <button class="homeButton" onclick="showTab('testimonials')">Testimonials</button>
+            <button class="homeButton" onclick="showTab('clients')">Clients</button>
+          </div>
+          <div id="press" class="tab-content">
+            <p>Our experts have been featured in press numerous times.</p>
+            <p>We are one of the leading companies in providing financial planning services.</p>
+            <p>We guarantee the highest quality of our services and solutions.</p>
+          </div>
+          <div id="testimonials" class="tab-content" style="display: none;">
+            <p>"Great company! We are very happy with the results."</p>
+            <p>"Excellent service, very professional and knowledgeable."</p>
+            <p>"I would highly recommend them to anyone looking for financial advice."</p>
+          </div>
+          <div id="clients" class="tab-content" style="display: none;">
+            <p>Our clients are some of the best companies in the world:</p>
+            <ul class="list-unstyled" style="text-decoration: none;">
+              <li>Company A</li>
+              <li>Company B</li>
+              <li>Company C</li>
+              <li>Company D</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container" style="width: 100%;">
+      <div class="row" id="servicesContainer">
+        <div class="col" style="width: 100%;">
+          <h5>About Us</h5>
+          <p>We are a leading company in providing high-quality financial planning services. Our mission is to ensure the highest level of satisfaction for our clients.</p>
+        </div>
+        <div class="col" style="width: 100%;">
+          <h5>Contact Information</h5>
+          <p>267 Park Avenue, New York, NY 90210</p>
+          <p>Phone: 1-800-1234-5671</p>
+          <p>Email: info@company.com</p>
+        </div>
+        <div class="col" style="width: 100%;">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function showTab(tab) {
+      document.querySelectorAll('.tab-content').forEach(function(content) {
+        content.style.display = 'none';
+      });
+      document.getElementById(tab).style.display = 'block';
+      document.querySelectorAll('.tabs button').forEach(function(button) {
+        button.classList.remove('active');
+      });
+      document.querySelector('.tabs button[onclick="showTab(\'' + tab + '\')"]').classList.add('active');
+    }
+  </script>
+</body>
+</html>

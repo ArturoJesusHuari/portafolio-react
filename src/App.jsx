@@ -25,6 +25,17 @@ import Week13Component from './components/Week/Week13Component'
 import Week14Component from './components/Week/Week14Component'
 import Week15Component from './components/Week/Week15Component'
 
+
+import Lab01Component from './components/Lab/Lab01Component'
+import Lab02Component from './components/Lab/Lab02Component'
+import Lab03Component from './components/Lab/Lab03Component'
+import Lab04Component from './components/Lab/Lab04Component'
+import Lab05Component from './components/Lab/Lab05Component'
+import Lab10Component from './components/Lab/Lab10Component'
+import Lab11Component from './components/Lab/Lab11Component'
+import Lab12Component from './components/Lab/Lab12Component'
+import Lab13Component from './components/Lab/Lab13Component'
+
 function App() {
 
   return (
@@ -57,6 +68,16 @@ function App() {
             <Route path='/portafolio-react/week13' element={ <Week13Component/> }/> 
             <Route path='/portafolio-react/week14' element={ <Week14Component/> }/> 
             <Route path='/portafolio-react/week15' element={ <Week15Component/> }/> 
+
+            <Route path='/portafolio-react/lab01' element={ <Lab01Component/> }/> 
+            <Route path='/portafolio-react/lab02' element={ <Lab02Component/> }/> 
+            <Route path='/portafolio-react/lab03' element={ <Lab03Component/> }/> 
+            <Route path='/portafolio-react/lab04' element={ <Lab04Component/> }/> 
+            <Route path='/portafolio-react/lab05' element={ <Lab05Component/> }/> 
+            <Route path='/portafolio-react/lab10' element={ <Lab10Component/> }/> 
+            <Route path='/portafolio-react/lab11' element={ <Lab11Component/> }/> 
+            <Route path='/portafolio-react/lab12' element={ <Lab12Component/> }/> 
+            <Route path='/portafolio-react/lab13' element={ <Lab13Component/> }/> 
           </Routes>
           </main>
         </Router>

@@ -1,0 +1,67 @@
+.container {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.color-red{
+  background-color: red;
+}
+.color-blue{
+  background-color: blue;
+}
+.color-yellow{
+  background-color: yellow;
+}
+.color-green{
+  background-color: green;
+}
+.color-pink{
+  background-color: pink;
+}
+.color-orange{
+  background-color: orange;
+}
+@media (min-width: 576px) {
+  .col-sm {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .col-md {
+    flex: 0 0 auto;
+    width: 21%;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg {
+    width: 13%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-xl {
+    flex: 0 0 auto;
+    width: 5%;
+  }
+}
+@media (min-width: 1400px) {
+  .col-xxl {
+    flex: 0 0 auto;
+    width: 5%;
+  }
+}

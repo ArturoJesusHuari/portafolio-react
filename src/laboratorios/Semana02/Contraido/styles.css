@@ -1,0 +1,141 @@
+:root {
+    --background-sidebar-color: rgb(191, 9, 9);
+    --color-sidebar: white;
+
+    --background-main-color-light: rgb(229, 231, 233 );
+    --color-main-p-light: black;
+    --color-main-title-light: rgb(191, 9, 9);
+
+    --roboto: Roboto, sans-serif;
+  }
+body{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    font-family: var(--roboto)
+}
+#home{
+    background-image: url(https://www.gob.pe/packs/media/images/machupicchu-33141c4e3f8ed9d299715ec084410cfd.svg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    background-color: var(--background-sidebar-color);
+    color: #fff;
+    transition: width 0.1s ease;
+}
+.sidebar p{
+    justify-content: center;
+}
+.sidebar.collapsed {
+    width: 45px;
+}
+.sidebar.collapsed p{
+    display: none;
+}
+.sidebar.collapsed ul li {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.sidebar button {
+    margin-left: 0.5vw;
+}  
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}  
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid var(--background-sidebar-color);
+    text-decoration: none;
+    margin-left: 0.5vw;
+}
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+}
+.sidebar ul li a p{
+    margin-left: 8%;
+}
+.toggle-btn {
+    color: var(--color-sidebar);
+    position: block;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}  
+.toggle-btn span {
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    transition: background-color 0.3s ease;
+}
+.toggle-btn.collapsed span {
+    background-color: #fff;
+}
+.toggle-btn.collapsed span:nth-child(1) {
+    transform: translateY(30px) rotate(45deg);
+}  
+.toggle-btn.collapsed span:nth-child(2) {
+    opacity: 0;
+}
+.toggle-btn.collapsed span:nth-child(3) {
+    transform: translateY(-100px) rotate(-45deg);
+}
+main{
+    background-color: var(--background-main-color-light);
+    color: var(--color-main-p-light);
+    width: 100vw;
+    padding-inline: 10%;
+    padding-top: 5%;
+    line-height: 1.5rem;
+    padding-left: 15vw;
+}
+main section h1,main section h2{
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+#title{
+    line-height: 3rem;
+    font-size:2.7rem;
+}
+main section h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+main section{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+main section h3 a{
+    text-decoration: none;
+    color: rgb(88, 126, 192)
+}
+main section ul li a{
+    text-decoration: none;
+    color: rgb(88, 126, 192)
+}

@@ -1,0 +1,24 @@
+
+.nav-link{
+  color: black;
+}
+.masthead{
+  background-color: blueviolet;
+}
+#home{
+  background-image: url(https://www.pisopak.com/wp-content/uploads/2023/08/ALASKA.jpg);
+  height: 100vh;
+}
+.h-100{
+  height: 100px;
+}
+#map{
+  height: 95%;
+}
+#title{
+  margin-top: 20vh;
+  font-size: 4rem;
+}
+.yellow{
+  color: #ffc107;
+}

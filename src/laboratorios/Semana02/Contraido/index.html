@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar con Modo Contraido</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/64f1b365fc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="reset.css"> 
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+<div class="sidebar" id="sidebar">
+<button class="toggle-btn" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>
+  <ul>
+    <li><a href="#home"><i class="fa-solid fa-house"></i></i><p>Inicio</p></a></li>
+    <li><a href="#candidates"><i class="fa-solid fa-person"></i></i><p>Candidatos</p></a></li>
+    <li><a href="#news"><i class="fa-solid fa-newspaper"></i></i><p>Noticias</p></a></li>
+    <li><a href="#resources"><i class="fa-solid fa-bookmark"></i><p>Recursos</p></a></li>
+  </ul>
+</div>
+
+<main id="main">
+  <section id="home">
+      <h1 id="title">Bienvenido a Elige Perú</h1>
+      <p>Tu fuente confiable de información sobre los candidatos a la presidencia del Perú para las elecciones de 2026. Aquí encontrarás perfiles detallados de los principales contendientes, sus plataformas políticas, antecedentes, y más. ¡Toma decisiones informadas para las próximas elecciones!</p>
+  </section>
+  <section id="candidates">
+      <h2>Candidatos</h2>
+      <h3><a href="KSFH.html">Keiko Sofía Fujimori Higuchi</a></h3>
+      <hr>
+      <h3><a href="CAP.html">César Acuña Peralta</a></h3>
+      <hr>
+      <h3><a href="AIHT">Antauro Igor Humala Tasso</a></h3>
+      <hr>
+      <h3><a href="">Verónika Mendoza</a></h3>
+      <hr>
+      <h3><a href="">Carlos Álvarez</a></h3>
+      <hr>
+      <h3><a href="">Carlos Añaños</a></h3>
+  </section>
+  <section id="news">
+      <h2>
+          Noticias y Actualizaciones
+      </h2>
+      <p>
+          Mantente al día con las últimas noticias, eventos y actualizaciones relacionadas con las elecciones presidenciales de 2026. Aquí encontrarás análisis políticos, entrevistas exclusivas, y cobertura en tiempo real para que estés informado en todo momento.
+      </p>
+  </section>
+  <section id="resources">
+      <h2>Recursos Adicionales</h2>
+      <ul>
+          <li><a href="http://www.jne.gob.pe/" target="_blank">Jurado Nacional de Elecciones (JNE)</a></li>
+          <li><a href="https://www.oas.org/es/centro_noticias/comunicado_prensa.asp?sCodigo=C-228/20" target="_blank">Organización de los Estados Americanos (OEA)</a></li>
+          <li><a href="https://www.lalupa.pe/" target="_blank">La Lupa (Perú)</a></li>
+          <li><a href="https://ojo-publico.com/" target="_blank">OjoPúblico (Perú)</a></li>
+          <li><a href="https://chequeado.com/" target="_blank">Chequeado (Internacional)</a></li>
+          <li><a href="https://www.ipd.org.pe/" target="_blank">Instituto Peruano de Derecho Electoral (IPD)</a></li>
+          <li><a href="https://www.rpp.pe/" target="_blank">RPP Noticias (Perú)</a></li>
+          <li><a href="http://www.congreso.gob.pe/" target="_blank">Congreso de la República del Perú</a></li>
+      </ul>
+  </section>
+</main>
+<footer>
+
+</footer>
+
+<script>
+  function toggleSidebar() {
+    var sidebar = document.getElementById('sidebar');
+    var content = document.getElementById('content');
+    sidebar.classList.toggle('collapsed');
+    content.classList.toggle('collapsed');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BOOTSTRAP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/64f1b365fc.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans antialiased text-gray-900">
+  <header class="bg-dark text-white py-3">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-auto">
+          <a class="d-flex align-items-center" href="index.html">
+            <img class="mr-3" src="images/logo-inverse-158x37.png" alt="Logo" style="height: 40px;">
+          </a>
+        </div>
+        <div class="col-12 col-md d-flex flex-column flex-md-row justify-content-around align-items-center">
+          <div class="d-flex align-items-center mb-4 mb-md-0">
+            <img src="images/icon-clock-32x32.png" alt="Clock Icon" style="height: 32px;" class="mr-2">
+            <span>Mon - Sat: 9:00-18:00</span>
+          </div>
+          <div class="d-flex align-items-center mb-4 mb-md-0">
+            <img src="images/icon-map-marker-25x33.png" alt="Location Icon" style="height: 32px;" class="mr-2">
+            <span>267 Park Avenue, New York, NY 90210</span>
+          </div>
+          <div class="d-flex align-items-center mb-4 mb-md-0">
+            <img src="images/icon-phone-28x29.png" alt="Phone Icon" style="height: 32px;" class="mr-2">
+            <span>1-800-1234-5671</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('images/home-slide-1.jpg'); padding-bottom: 32%; background-size: contain; background-position: center;width: 100%; background-repeat: no-repeat;">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4 text-dark">Solutions that never miss the aim</h1>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
+          <a class="btn btn-secondary btn-lg" href="#" role="button">Our Services</a>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('images/home-slide-2.jpg');padding-bottom:  32%;  background-size: contain; background-position: center;width: 100%; background-repeat: no-repeat;">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4 text-dark">Expert Financial Advice</h1>
+          <p class="text-dark">With over 20 years of experience we'll ensure you always get the best guidance</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Our Services</a>
+          <a class="btn btn-secondary btn-lg" href="#" role="button">Purchase now</a>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="mb-3">
+                <img src="images/icon-chart-41x36.png" alt="">
+              </div>
+              <h5 class="card-title">Financial Planning</h5>
+              <p class="card-text">We'll help you make sensible decisions about money that can help you achieve your goals in life.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="mb-3">
+                <img src="images/icon-chart-41x36.png" alt="">
+              </div>
+              <h5 class="card-title">Retirement Planning</h5>
+              <p class="card-text">Use our strategies and retirement advice, including retirement calculators to help you retire faster.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="mb-3">
+                <img src="images/icon-chart-41x36.png" alt="">
+              </div>
+              <h5 class="card-title">Risk Management</h5>
+              <p class="card-text">Risk management is intended to manage financial and other losses associated with risks to your assets or business.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="mb-3">
+                <img src="images/icon-chart-41x36.png" alt="">
+              </div>
+              <h5 class="card-title">Taxation</h5>
+              <p class="card-text">Tax planning considers the tax implications of business decisions, usually with the goal of minimizing tax liability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-primary text-white py-5">
+    <div class="container text-center">
+      <h2 class="display-4">What We Do</h2>
+      <p class="lead">We provide expert financial advice for businesses and individuals</p>
+      <a class="btn btn-light btn-lg" href="#">See All Services</a>
+    </div>
+  </section>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center display-4">About Us</h2>
+      <hr class="w-25 mx-auto mb-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Doing the right thing, at the right time.</h4>
+          <p>Welcome to the leading company on the market! Our success is driven by the highest quality customer service. We can meet the requirements even of the whimsical clients; there are no complex tasks for us! Thanks for your choice! Our company can boast the reputation of the trusted partner known worldwide. We are proud of the uncompromising quality of services.</p>
+          <a class="btn btn-primary" href="#">Read More</a>
+        </div>
+        <div class="col-md-6">
+          <div class="tab-content" id="myTabContent">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Press</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Clients</a>
+              </li>
+            </ul>
+            <div class="tab-content pt-4" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <p>Our experts have been featured in press numerous times.</p>
+                <p>We are one of the leading companies in providing financial planning services.</p>
+                <p>We guarantee the highest quality of our services and solutions.</p>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <p>"Great company! We are very happy with the results."</p>
+                <p>"Excellent service, very professional and knowledgeable."</p>
+                <p>"I would highly recommend them to anyone looking for financial advice."</p>
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <p>Our clients are some of the best companies in the world:</p>
+                <ul class="list-unstyled">
+                  <li>Company A</li>
+                  <li>Company B</li>
+                  <li>Company C</li>
+                  <li>Company D</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p>We are a leading company in providing high-quality financial planning services. Our mission is to ensure the highest level of satisfaction for our clients.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact Information</h5>
+          <p>267 Park Avenue, New York, NY 90210</p>
+          <p>Phone: 1-800-1234-5671</p>
+          <p>Email: info@company.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <div class="d-flex">
+            <a href="#" class="text-white mr-3">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="text-white mr-3">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="text-white mr-3">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#" class="text-white">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

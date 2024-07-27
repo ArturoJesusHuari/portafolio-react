@@ -1,0 +1,50 @@
+html{
+    background-color: ghostwhite;
+}
+.button-fa-brand{
+    display: inline-block;
+    text-align: center;
+    width: 10vw;
+    height: 10vh;
+    background-color: white;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0 1dvh 0 rgb(150, 151, 151); /* Sombra inferior */
+    line-height: 1;
+}
+.button-fa-brand:active{
+    box-shadow: 0 0.5dvh 0 rgb(150, 151, 151); /* Sombra inferior */
+}
+.button-fa-brand p {
+    margin: 0px;
+    font-size: 0.8rem;
+}
+.button-fa-brand-youtube{
+    background-color: #FF0000;
+    color: white;
+}
+.button-fa-brand-youtube{
+    background-color: #FF0000;
+    color: white;
+}
+.button-fa-brand-google{
+    background-image: linear-gradient(to right,#4285F4, #DB4437,#F4B400,#0F9D58);
+    background-image:linear-gradient(to right, #4285F4 0%, #4285F4 25%, #DB4437 25%, #DB4437 50%, #F4B400 50%, #F4B400 75%, #0F9D58 75%, #0F9D58 100%);
+    color: white;
+}
+.button-fa-brand-facebook{
+    background-color: #4267B2;
+    color: white;
+}
+.button-fa-brand-whatsapp{
+    background-color: #25D350;
+    color: white;
+}
+.button-fa-brand-github{
+    background-color: black;
+    color: white;
+}
+.button-fa-brand-instagram{
+    background-image: linear-gradient(to bottom,#405DE6, #5B51D8, #825AB4, #C13584, #E1306C,#FD1D1D,#F56040);
+    color: white;
+}

@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header, nav, main, section, footer {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+/* Estilos para la sección "Sobre mí" */
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+#about-me img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    #about-me {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #about-me img {
+        max-width: 50%; /* La imagen ocupa la mitad del ancho disponible */
+        margin: 0 20px 0 0; /* Margen a la derecha de la imagen */
+    }
+
+    #about-me p {
+        flex: 1; /* El texto ocupa todo el espacio restante */
+    }
+}
+/* Estilos específicos para la barra de navegación */
+nav {
+    background-color: #f8f9fa;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #333;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #e9ecef;
+}
+
+/* Estilos específicos para las secciones */
+section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Estilos específicos para el footer */
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    clear: both;
+}
+header, nav, main, section, aside, footer {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    header, nav, main, section, aside, footer {
+        margin: 20px;
+    }
+}

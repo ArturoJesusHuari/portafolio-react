@@ -1,0 +1,124 @@
+:root {
+    --background-sidebar-color: rgb(191, 9, 9);
+    --color-sidebar: white;
+
+    --background-main-color-light: rgb(229, 231, 233 );
+    --color-main-p-light: black;
+
+    --background-main-color-dark: rgb(20, 20, 20);
+    --color-main-dark: white;
+
+    --color-main-title-light: rgb(191, 9, 9);
+
+    --roboto: Roboto, sans-serif;
+  }
+body{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    font-family: var(--roboto)
+}
+aside{
+    background-color: var(--background-sidebar-color);
+    color: var(--color-sidebar);
+    height: 100vh;
+    width: 18vw;
+    text-align: left;
+    list-style: none;
+    position: fixed;
+}
+#home{
+    background-image: url(https://www.gob.pe/packs/media/images/machupicchu-33141c4e3f8ed9d299715ec084410cfd.svg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+}
+aside ul li{
+    margin-top: 3%;
+    margin-inline: 10%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+aside ul li a,aside ul li button{
+    text-decoration: none;
+    color: var(--color-sidebar);
+    background-color: var(--background-sidebar-color);
+    border: 0px;
+    font-size: auto;
+    font-family: var(--roboto);
+    margin-top: 25px;
+    display: flex;
+}
+aside ul li a p{
+    margin-left: 4%;
+}
+aside ul li button{
+    margin-top: 60vh;
+    font-size: 1.5rem;
+    margin-left: 0;
+}
+
+main{
+    background-color: var(--background-main-color-light);
+    color: var(--color-main-p-light);
+    width: 100;
+    padding-inline: 10%;
+    padding-top: 5%;
+    line-height: 1.5rem;
+    margin-left: 15%;
+}
+main section h1,main section h2{
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+#title{
+    line-height: 3rem;
+    font-size:2.7rem;
+}
+main section h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+main section{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+main section h3 a{
+    text-decoration: none;
+    color: rgb(88, 126, 192)
+}
+main section ul li a{
+    text-decoration: none;
+    color: rgb(88, 126, 192)
+}
+@media screen and (max-width: 800px) { /* Cambia este valor según tu necesidad */
+    #sidebar{
+        width: 12vw;
+    }
+    #sidebar p {
+        display: none; /* Oculta el texto cuando el ancho de la página sea menor que 600px */
+    }
+    aside ul li a,aside ul li button{
+        font-size: 1.5rem;
+        margin-top: 25px;
+        
+    }
+    #sidebar ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    #sidebar ul li a i {
+        margin-right: 5px; /* Espacio entre el ícono y el texto */
+    }
+    main{
+        width: 88vw;
+        margin-left: 12vw;
+    }
+}

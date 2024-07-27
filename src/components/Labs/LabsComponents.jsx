@@ -10,10 +10,7 @@ function LabsComponents() {
             <LabComponent sem={"03"} description={"Uso y personalización de librerías de código CSS para el diseño responsive y para el diseño de componentes de una página web."}/>
             <LabComponent sem={"04"} description={"Desarrollo de aplicaciones dinámicas con Javascript."}/>
             <LabComponent sem={"05"} description={"Desarrollo de aplicaciones dinámicas con Javascript."}/>
-            <LabComponent sem={"06"} description={"Uso apropiado del Editor Visual Studio Code mediante el plugin Emmet y atajos de teclado de VSC."}/>
-            <LabComponent sem={"07"} description={"Uso apropiado del Editor Visual Studio Code mediante el plugin Emmet y atajos de teclado de VSC."}/>
-            <LabComponent sem={"08"} description={"Uso apropiado del Editor Visual Studio Code mediante el plugin Emmet y atajos de teclado de VSC."}/>
-            <LabComponent sem={"09"} description={"Uso apropiado del Editor Visual Studio Code mediante el plugin Emmet y atajos de teclado de VSC."}/>
+            
             <LabComponent sem={"10"} description={"Desarrollo de aplicaciones dinámicas con React usando Hooks."}/>
             <LabComponent sem={"11"} description={"Desarrollo de aplicaciones dinámicas con Next JS."}/>
             <LabComponent sem={"12"} description={"Desarrollo de aplicaciones backend con el Lenguaje JSP."}/>

@@ -1,0 +1,25 @@
+ul{
+  list-style: none;
+  padding-inline-start: 5px;
+}
+li{
+  text-decoration: none;
+  display: flex;
+  margin-top: 1%;
+}
+ul li p{
+  width: 19vw;
+  font-size: 18px;
+}
+ul li button{
+  margin-inline: 2%;
+  height: 7vh;
+  align-items: center;
+  text-align: center;
+}
+#editar{
+  background-color: coral;
+}
+#eliminar{
+  background-color: crimson;
+}

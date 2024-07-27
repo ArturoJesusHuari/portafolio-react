@@ -1,0 +1,11 @@
+form{
+  margin-bottom: 4%;
+}
+input{
+  margin-inline: 1%;
+  font-size: 18px;
+}
+#agregar{
+  background-color: mediumseagreen;
+  margin-left: 4%;
+}
