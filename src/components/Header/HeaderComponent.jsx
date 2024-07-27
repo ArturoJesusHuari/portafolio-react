@@ -1,5 +1,8 @@
 import ContentComponent from "./ContentComponent";
 import SocialComponent from "./SocialComponent";
+
+import Yo from "../../assets/yo.jpeg"
+
 function HeaderComponent() {
   const myStyle = {
     borderRadius: "5%",
@@ -12,7 +15,7 @@ function HeaderComponent() {
       <div>
         <div className="flex justify-center items-center">
           <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Arturo Huari</h1>
-          <img src="https://portal.andina.pe/EDPfotografia3/Thumbnail/2023/08/09/000983784W.jpg"
+          <img src={Yo}
             style={myStyle} />
         </div>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Full Stack Developer

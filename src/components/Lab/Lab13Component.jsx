@@ -22,7 +22,7 @@ function Lab13Component() {
       <p>El Servlet es una clase de Jakarta EE que recibe peticiones web y genera respuestas. Los servlets se ejecutan dentro del contenedor de servlets de un servidor web.</p>
       
       <h3 className="text-xl font-semibold mt-4">Ejemplo 1 - HelloServlet</h3>
-      <pre className="bg-gray-100 p-4 overflow-auto">
+      <pre className="bg-black p-4 overflow-auto">
         {`package org.suasnabar.webx01.servlet;
 
 import java.io.*;
@@ -64,7 +64,7 @@ public class HelloServlet extends HttpServlet {
       <h3 className="text-xl font-semibold mt-4">Ejemplo 2 - Formularios y Servlet</h3>
       
       <h4 className="text-lg font-semibold mt-4">form.jsp</h4>
-      <pre className="bg-gray-100 p-4 overflow-auto">
+      <pre className="bg-black p-4 overflow-auto">
         {`<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -97,7 +97,7 @@ public class HelloServlet extends HttpServlet {
       </pre>
 
       <h4 className="text-lg font-semibold mt-4">ServletForm.java</h4>
-      <pre className="bg-gray-100 p-4 overflow-auto">
+      <pre className="bg-black p-4 overflow-auto">
         {`package org.suasnabar.webx01.servlet;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -128,7 +128,7 @@ public class ServletForm extends HttpServlet {
       </pre>
       
       <h4 className="text-lg font-semibold mt-4">verform.jsp</h4>
-      <pre className="bg-gray-100 p-4 overflow-auto">
+      <pre className="bg-black p-4 overflow-auto">
         {`<%@page import="java.util.List" %>
 <%@page import="org.suasnabar.webx01.logic.Estudiante" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
@@ -180,7 +180,7 @@ public class ServletForm extends HttpServlet {
       <h3 className="text-xl font-semibold mt-4">Endpoints - API REST</h3>
       <p>Los endpoints en API REST definen operaciones CRUD a través de métodos HTTP y segmentos de URL.</p>
       
-      <pre className="bg-gray-100 p-4 overflow-auto">
+      <pre className="bg-black p-4 overflow-auto">
         {`@RestController
 public class Rutas {
     @GetMapping("/home")
@@ -217,7 +217,7 @@ public class Rutas {
       </pre>
       
       <h3 className="text-xl font-semibold mt-4">Models</h3>
-      <pre className="bg-gray-100 p-4 overflow-auto">
+      <pre className="bg-black p-4 overflow-auto">
         {`@Entity
 @Table(name = "students")
 public class Student {
@@ -233,10 +233,10 @@ public class Student {
       <h2 className="text-2xl font-semibold mt-6">IV. EJERCICIOS DEL LABORATORIO</h2>
       
       <h4 className="text-lg font-semibold mt-4">Ejercicio 13.1</h4>
-      <p>Desarrollar un controlador de API que compruebe que el id y nota de la ruta “/student/{id}/{nota}” son números. En caso de certeza, mostrar un JSON que contenga el id, nota, un mensaje de ruta válida y el estado 202.</p>
+      <p>Desarrollar un controlador de API que compruebe que el id y nota de la ruta  son números. En caso de certeza, mostrar un JSON que contenga el id, nota, un mensaje de ruta válida y el estado 202.</p>
       
       <h4 className="text-lg font-semibold mt-4">Ejercicio 13.2</h4>
-      <p>Desarrollar un controlador de API con los id y notas según la ruta “/student/{id}?nota1=xx&nota2=xx&nota3=xx”. Mostrar un JSON que contenga el id, promedio, un mensaje de ruta válida y el estado 202.</p>
+      <p>Desarrollar un controlador de API con los id y notas según la ruta. Mostrar un JSON que contenga el id, promedio, un mensaje de ruta válida y el estado 202.</p>
       
       <h4 className="text-lg font-semibold mt-4">Ejercicio 13.3</h4>
       <p>Diseñar y desarrollar una API REST para que devuelva datos desde una base de datos de 3 tablas: departamento (id, name), provincia (id, name) y distrito (id, name).</p>
