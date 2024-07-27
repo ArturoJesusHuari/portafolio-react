@@ -8,7 +8,7 @@ function HeaderComponent() {
     height: "25vh"
   };
   return (
-    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-8">
+    <header className="lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-8">
       <div>
         <div className="flex justify-center items-center">
           <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Arturo Huari</h1>
@@ -19,7 +19,7 @@ function HeaderComponent() {
         </h2>
         <p className="mt-4 leading-normal">Desarrollador Full Stack apasionado por crear soluciones
           innovadoras y eficientes.</p>
-        <nav className="nav hidden lg:block" aria-label="In-page jump links">
+        <nav className="nav" aria-label="In-page jump links">
           <ul className="mt-2 w-max">
             <ContentComponent text="Introduccion" to='/portafolio-react/intro' />
             <ContentComponent text="Semanas"  to='/portafolio-react/weeks'/>
