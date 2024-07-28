@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 function Lab13Component() {
   return (
     <div className="p-6">
@@ -230,20 +231,143 @@ public class Student {
 }`}
       </pre>
       
+      
       <h2 className="text-2xl font-semibold mt-6">IV. EJERCICIOS DEL LABORATORIO</h2>
       
       <h4 className="text-lg font-semibold mt-4">Ejercicio 13.1</h4>
-      <p>Desarrollar un controlador de API que compruebe que el id y nota de la ruta  son números. En caso de certeza, mostrar un JSON que contenga el id, nota, un mensaje de ruta válida y el estado 202.</p>
+      <p>Desarrollar un controlador de API que compruebe que el id y nota de la ruta son números. En caso de certeza, mostrar un JSON que contenga el id, nota, un mensaje de ruta válida y el estado 202.</p>
       <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana13">Ejercicio 13.1</a>
+      <SyntaxHighlighter language="java" style={atomDark}>
+        {`@RestController
+@RequestMapping("/api")
+public class ApiController {
+
+    @GetMapping("/validate/{id}/{nota}")
+    public ResponseEntity<Map<String, Object>> validateIdNota(@PathVariable String id, @PathVariable String nota) {
+        Map<String, Object> response = new HashMap<>();
+        try {
+            int idNum = Integer.parseInt(id);
+            int notaNum = Integer.parseInt(nota);
+            response.put("id", idNum);
+            response.put("nota", notaNum);
+            response.put("message", "Ruta válida");
+            return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
+        } catch (NumberFormatException e) {
+            response.put("message", "ID o nota no son números válidos");
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        }
+    }
+}`}
+      </SyntaxHighlighter>
+
       <h4 className="text-lg font-semibold mt-4">Ejercicio 13.2</h4>
       <p>Desarrollar un controlador de API con los id y notas según la ruta. Mostrar un JSON que contenga el id, promedio, un mensaje de ruta válida y el estado 202.</p>
       <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana13">Ejercicio 13.2</a>
+      <SyntaxHighlighter language="java" style={atomDark}>
+        {`@RestController
+@RequestMapping("/api")
+public class ApiController {
+
+    @GetMapping("/average/{id}/{nota1}/{nota2}")
+    public ResponseEntity<Map<String, Object>> calculateAverage(@PathVariable String id, @PathVariable String nota1, @PathVariable String nota2) {
+        Map<String, Object> response = new HashMap<>();
+        try {
+            int idNum = Integer.parseInt(id);
+            int nota1Num = Integer.parseInt(nota1);
+            int nota2Num = Integer.parseInt(nota2);
+            double average = (nota1Num + nota2Num) / 2.0;
+            response.put("id", idNum);
+            response.put("promedio", average);
+            response.put("message", "Ruta válida");
+            return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
+        } catch (NumberFormatException e) {
+            response.put("message", "ID o notas no son números válidos");
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        }
+    }
+}`}
+      </SyntaxHighlighter>
+
       <h4 className="text-lg font-semibold mt-4">Ejercicio 13.3</h4>
       <p>Diseñar y desarrollar una API REST para que devuelva datos desde una base de datos de 3 tablas: departamento (id, name), provincia (id, name) y distrito (id, name).</p>
       <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana13">Ejercicio 13.3</a>
+      <SyntaxHighlighter language="java" style={atomDark}>
+        {`@RestController
+@RequestMapping("/api")
+public class LocationController {
+
+    @Autowired
+    private DepartamentoRepository departamentoRepository;
+
+    @Autowired
+    private ProvinciaRepository provinciaRepository;
+
+    @Autowired
+    private DistritoRepository distritoRepository;
+
+    @GetMapping("/departamentos")
+    public List<Departamento> getAllDepartamentos() {
+        return departamentoRepository.findAll();
+    }
+
+    @GetMapping("/provincias")
+    public List<Provincia> getAllProvincias() {
+        return provinciaRepository.findAll();
+    }
+
+    @GetMapping("/distritos")
+    public List<Distrito> getAllDistritos() {
+        return distritoRepository.findAll();
+    }
+}`}
+      </SyntaxHighlighter>
+
       <h4 className="text-lg font-semibold mt-4">Ejercicio 13.4</h4>
       <p>Diseñar y desarrollar una API REST para realizar las operaciones CRUD desde y hacia una base de datos de 3 tablas: departamento (id, name), provincia (id, name) y distrito (id, name).</p>
       <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana13">Ejercicio 13.4</a>
+      <SyntaxHighlighter language="java" style={atomDark}>
+        {`@RestController
+@RequestMapping("/api")
+public class LocationController {
+
+    @Autowired
+    private DepartamentoRepository departamentoRepository;
+
+    @Autowired
+    private ProvinciaRepository provinciaRepository;
+
+    @Autowired
+    private DistritoRepository distritoRepository;
+
+    // CRUD for Departamento
+    @PostMapping("/departamentos")
+    public Departamento createDepartamento(@RequestBody Departamento departamento) {
+        return departamentoRepository.save(departamento);
+    }
+
+    @GetMapping("/departamentos/{id}")
+    public Departamento getDepartamentoById(@PathVariable Long id) {
+        return departamentoRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Departamento not found"));
+    }
+
+    @PutMapping("/departamentos/{id}")
+    public Departamento updateDepartamento(@PathVariable Long id, @RequestBody Departamento departamentoDetails) {
+        Departamento departamento = departamentoRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Departamento not found"));
+        departamento.setName(departamentoDetails.getName());
+        return departamentoRepository.save(departamento);
+    }
+
+    @DeleteMapping("/departamentos/{id}")
+    public ResponseEntity<?> deleteDepartamento(@PathVariable Long id) {
+        Departamento departamento = departamentoRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Departamento not found"));
+        departamentoRepository.delete(departamento);
+        return ResponseEntity.ok().build();
+    }
+
+    // Similar CRUD operations for Provincia and Distrito
+}`}
+      </SyntaxHighlighter>
+
     </div>
   );
 }
