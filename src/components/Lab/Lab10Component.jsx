@@ -290,13 +290,13 @@ const Padre3 = () => {
         <li>Componente3: un div de fondo de color celeste con una fotografía de fondo transparente.</li>
       </ol>
       <p>Implementar un código en el botón para cambiar el color de fondo aleatoriamente en los 3 componentes.</p>
-      
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana10/Ejercicio1">Ejercicio 10.1</a>
       <h3 className="text-xl font-semibold mt-4">Ejercicio 10.2</h3>
       <p>Desarrollar una aplicación web con hooks personalizados y useEffect para crear un widget (150px x 150px) con una imagen (5 imágenes) que cambia aleatoriamente cada 30 segundos.</p>
-      
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana10/Ejercicio2">Ejercicio 10.2</a>
       <h3 className="text-xl font-semibold mt-4">Ejercicio 10.3</h3>
       <p>Desarrollar una aplicación web CRUD para gestionar los datos de un empleado (id, name, address, city) que permita agregar, editar y eliminar objetos utilizando useContext y useReducer. Además, el objeto deberá guardar y recuperar del LocalStorage.</p>
-      
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana10/Ejercicio3">Ejercicio 10.3</a>
       <h3 className="text-xl font-semibold mt-4">Ejercicio 10.4</h3>
       <p>En el Ejercicio 10.3, agregar las siguientes funcionalidades:</p>
       <ol className="list-decimal pl-5">
@@ -304,6 +304,7 @@ const Padre3 = () => {
         <li>Agregar un input text y botón para filtrar datos de los empleados.</li>
         <li>Agregar una barra de paginación que permita mostrar 8 empleados por página.</li>
       </ol>
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana10/Ejercicio4">Ejercicio 10.4</a>
     </div>
   );
 }

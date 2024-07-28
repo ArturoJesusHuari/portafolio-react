@@ -34,7 +34,7 @@ function Lab11Component() {
 
       <h4 className="text-lg font-semibold mt-4">Ejercicio 11.1</h4>
       <p>Desarrollar un CRUD en Next JS con componentes de servidor y cliente con la API <a href="https://jsonplaceholder.typicode.com/posts">https://jsonplaceholder.typicode.com/posts</a>.</p>
-      
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana11">Ejercicio 11.1</a>
       <h4 className="text-lg font-semibold mt-4">Ejercicio 11.2</h4>
       <p>Desarrollar un CRUD en Next JS con componentes de servidor y cliente utilizando la API <a href="https://jsonplaceholder.typicode.com/posts">https://jsonplaceholder.typicode.com/posts</a>. Al ejercicio 11.1 agregar las funcionalidades de:</p>
       <ul>
@@ -42,18 +42,19 @@ function Lab11Component() {
         <li>Búsqueda en el campo title</li>
         <li>Paginación de 8 en 8.</li>
       </ul>
-      
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana11">Ejercicio 11.2</a>
       <h4 className="text-lg font-semibold mt-4">Ejercicio 11.3</h4>
       <p>Al ejercicio 11.2 agregar las funcionalidades de:</p>
       <ul>
         <li>Un layout y componentes tipo panel de administración con header, aside, main y footer.</li>
       </ul>
-
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana11">Ejercicio 11.3</a>
       <h4 className="text-lg font-semibold mt-4">Ejercicio 11.4</h4>
       <p>Al ejercicio 11.3 agregar las funcionalidades de:</p>
       <ul>
         <li>Sistema de Autenticación utilizando usuarios de la API <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users</a>. Para el nombre de usuario utilice el campo username igual para la contraseña.</li>
       </ul>
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana11">Ejercicio 11.4</a>
     </div>
   );
 }

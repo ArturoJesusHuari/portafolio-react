@@ -30,15 +30,16 @@ function Lab12Component() {
       
       <h4 className="text-lg font-semibold mt-4">Ejercicio 11.1</h4>
       <p>Desarrollar un formulario con nombre, apellidos (input text), género (input radio), pasatiempos: fútbol, natación, lectura (input check). Capturar los datos y mostrarlos en otro archivo JSP mediante el método GET.</p>
-      
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana12/Ejercicio1">Ejercicio 12.1</a>
       <h4 className="text-lg font-semibold mt-4">Ejercicio 11.2</h4>
       <p>Desarrollar un formulario con nombre, apellidos (input text), género (input radio), pasatiempos: fútbol, natación, lectura (input check). Capturar los datos y mostrarlos en otro archivo JSP mediante el método POST.</p>
-      
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana12/Ejercicio2">Ejercicio 12.2</a>
       <h4 className="text-lg font-semibold mt-4">Ejercicio 11.3</h4>
       <p>Declarar un array multidimensional con los datos de 10 estudiantes y mostrarlos en un JSP que muestre una tabla estilizada con CSS.</p>
-      
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana12/Ejercicio3">Ejercicio 12.3</a>
       <h4 className="text-lg font-semibold mt-4">Ejercicio 11.4</h4>
       <p>Desarrollar un CRUD completo en JSP con una base de datos en MySQL utilizando JDBC para una tabla de estudiantes.</p>
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana12/Ejercicio4">Ejercicio 12.4</a>
     </div>
   );
 }

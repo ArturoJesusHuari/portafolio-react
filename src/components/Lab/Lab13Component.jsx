@@ -234,15 +234,16 @@ public class Student {
       
       <h4 className="text-lg font-semibold mt-4">Ejercicio 13.1</h4>
       <p>Desarrollar un controlador de API que compruebe que el id y nota de la ruta  son números. En caso de certeza, mostrar un JSON que contenga el id, nota, un mensaje de ruta válida y el estado 202.</p>
-      
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana13">Ejercicio 13.1</a>
       <h4 className="text-lg font-semibold mt-4">Ejercicio 13.2</h4>
       <p>Desarrollar un controlador de API con los id y notas según la ruta. Mostrar un JSON que contenga el id, promedio, un mensaje de ruta válida y el estado 202.</p>
-      
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana13">Ejercicio 13.2</a>
       <h4 className="text-lg font-semibold mt-4">Ejercicio 13.3</h4>
       <p>Diseñar y desarrollar una API REST para que devuelva datos desde una base de datos de 3 tablas: departamento (id, name), provincia (id, name) y distrito (id, name).</p>
-      
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana13">Ejercicio 13.3</a>
       <h4 className="text-lg font-semibold mt-4">Ejercicio 13.4</h4>
       <p>Diseñar y desarrollar una API REST para realizar las operaciones CRUD desde y hacia una base de datos de 3 tablas: departamento (id, name), provincia (id, name) y distrito (id, name).</p>
+      <a className='text-blue-600' href="https://github.com/ArturoJesusHuari/portafolio-react/tree/main/src/laboratorios/Semana13">Ejercicio 13.4</a>
     </div>
   );
 }
